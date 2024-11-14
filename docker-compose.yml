@@ -5,7 +5,7 @@ services:
             POSTGRES_USER: ${DB_USER}
             POSTGRES_PASSWORD: ${DB_PASSWORD}
             POSTGRES_DB: ${DB_NAME}
-        container_name: coffieeshop
+        container_name: postgres_coffee
         ports:
             - '5432:5432'
         volumes:
@@ -16,6 +16,6 @@ services:
         environment:
             PGADMIN_DEFAULT_EMAIL: ${PG_EMAIL}
             PGADMIN_DEFAULT_PASSWORD: ${PG_PASSWORD}
-        container_name: coffieeAdmin
+        container_name: pgadmin_coffee
         ports:
             - '5050:80'
